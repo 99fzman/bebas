@@ -1,0 +1,146 @@
+<html>
+  <meta charset="UTF-8" /><meta
+    content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5"
+    name="viewport"
+  /><meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  /><link
+    href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+    rel="stylesheet"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  <link
+    href="https://hanyauntukmu.likeadream.repl.co/style.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <script src="https://hanyauntukmu.likeadream.repl.co/script.js"></script>
+  <head> 
+    <title> Hello :D</title>
+  </head>
+  <style>
+    body {
+      background-image: url(https://i.postimg.cc/NMLZ6Zk5/IMG-20220207-131156-010.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-y: bottom;
+    }
+    body::before {
+      content: "" !important;
+      color: transparent !important;
+    }
+  </style>
+  <body>
+    <div id="bodyblur">
+      <!-- <img
+        src="https://i.postimg.cc/NMLZ6Zk5/IMG-20220207-131156-010.jpg"
+        width="100%"
+        height="100%"
+      /> -->
+    </div>
+
+    <div id="Content">
+      <div class="image">
+        <img
+          src="https://i.postimg.cc/W4xjf6yM/peachcat-peachcat-and-goma.gif"
+          width="130px"
+          height="130px"
+        />
+      </div>
+      <div>
+        <blockquote>
+          <p id="text"></p>
+          <p id="text2"></p>
+        </blockquote>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function play() {
+        var audio = new Audio(
+          "http://sndup.net/w4ss/d"
+        )
+        audio.play()
+      }
+
+      const swals = Swal.mixin({
+        allowOutsideClick: false,
+        cancelButtonColor: "#FF0040",
+      })
+      const swalsy = Swal.mixin({
+        confirmButtonText: "Iya",
+        allowOutsideClick: false,
+      })
+      const swalst = Swal.mixin({
+        allowOutsideClick: false,
+        showConfirmButton: false,
+        timer: 5000,
+        timerProgressBar: true,
+      })
+
+      async function mulaitanya() {
+        var { isConfirmed: tanyawal } = await swals.fire({
+          title: `Haiiii :D yuk klik tombol dibawah yaa`,
+          imageUrl: "https://s3.getstickerpack.com/storage/uploads/sticker-pack/quby-pentol-gif/sticker_7.gif?afb050261cc5640e21ce2eb44043c17a",
+          imageWidth: 120,
+          imageHeight: 120,
+          confirmButtonText: "Okay",
+          allowOutsideClick: false,
+          showCancelButton: false,
+        })
+        if (tanyawal) {
+          play()
+          kuis()
+        }
+      }
+
+      async function kuis() {
+        await swalst.fire({
+          title: "Lif, pasti kamu capek ya hari ini??",
+          imageUrl: "https://i.postimg.cc/02wF21b1/peach-goma.gif",
+          imageWidth: 120,
+          imageHeight: 120,
+        })
+        await swalst.fire({
+          title: "Gapapa kok",
+          imageUrl: "https://i.postimg.cc/g06FWScx/tepukbadan.gif",
+          imageWidth: 120,
+          imageHeight: 120,
+        })
+        await swalst.fire({
+          title: "Selamat yaaa udah bisa lewatin semua hal dihari ini",
+          imageUrl: "https://i.pinimg.com/originals/26/27/52/2627528fd5154f649509989153149083.gif",
+          imageWidth: 130,
+          imageHeight: 130,
+        })
+        await swalst.fire({
+          title: "Jangan lupa minum ..",
+          imageUrl: "https://media.tenor.com/images/2d9b5006fc5907f319c70044d91bea1d/tenor.gif",
+          imageWidth: 120,
+          imageHeight: 120,
+        })
+        await swalst.fire({
+          title: "dan juga makan nya ..",
+          imageUrl: "https://media1.tenor.com/images/9ca1b8e3faab62d4814a0125717de1ec/tenor.gif?itemid=15211105",
+          imageWidth: 120,
+          imageHeight: 120,
+        })
+        await swalst.fire({
+          title: "Maaf aku hanya bisa support kamu aja &#129402;",
+          imageUrl: "https://i.postimg.cc/SsmkcNY9/bear-cute-1.gif",
+          imageWidth: 120,
+          imageHeight: 120,
+        })
+        text = "Tetep semangat kerjanyaa "
+        emotnama = "&#10084;"
+        text2 = "Jaga kesehatannya, jangan sampe sakit &#128513"
+        text3 = "-kamupastitau"
+        showDiv()
+      }
+      mulaitanya()
+    </script>
+  </body>
+</html>
